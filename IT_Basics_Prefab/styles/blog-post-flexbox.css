@@ -1,0 +1,90 @@
+:root {
+    --something: #7ebea0;
+}
+
+.flex-container-1 {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.flex-container-2a {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container-2b {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-container-3 {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-object {
+    background-color: aqua;
+    width: 220px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.flex-object p {
+    margin: 0;
+    font-size: 200%;
+}
+
+@media(max-width: 1000px) {
+    .flex-object {
+        background-color: cornsilk
+    }
+}
+
+.grid-container-1 {
+    background-color: var(--something);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3vw;
+}
+
+@media(max-width: 1000px) {
+    .grid-container-1 {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.grid-object {
+    background-color: aqua;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.grid-object p {
+    margin: 0;
+    font-size: 200%;
+}
+
+.flex-object:hover {
+    background-color: black;
+    transition: background-color 1s;
+}
